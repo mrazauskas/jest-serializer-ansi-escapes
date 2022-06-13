@@ -1,5 +1,6 @@
 /** @type {import('jest').Config} */
-module.exports = {
-  coverageReporters: ["clover", "text"],
+const config = {
   reporters: ["default", "github-actions"],
 };
+
+module.exports = config;
