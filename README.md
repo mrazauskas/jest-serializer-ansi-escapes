@@ -2,8 +2,9 @@
 
 > Jest snapshot serializer for ANSI escape sequences.
 
-[![version](https://img.shields.io/npm/v/jest-serializer-ansi-escapes.svg)](https://npmjs.com/package/jest-serializer-ansi-escapes)
-[![license](https://img.shields.io/github/license/mrazauskas/jest-serializer-ansi-escapes.svg)](https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md)
+[![version](https://img.shields.io/npm/v/jest-serializer-ansi-escapes)](https://npmjs.com/package/jest-serializer-ansi-escapes)
+[![license](https://img.shields.io/github/license/mrazauskas/jest-serializer-ansi-escapes)](https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md)
+[![coverage](https://img.shields.io/codecov/c/github/mrazauskas/jest-serializer-ansi-escapes/main)](https://app.codecov.io/gh/mrazauskas/jest-serializer-ansi-escapes)
 
 This snapshot serializer turns [ANSI escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code) into human readable text. It implements serialization of color, style and cursor control escapes and works with vanilla sequences as well as the output from libraries like `chalk`, `colors`, `ansi-escapes`, `ansi-styles` or `terminal-kit`.
 
