@@ -37,7 +37,7 @@
     "@babel/core": "7.18.2",
     "@babel/preset-env": "7.18.2",
     "ansi-escapes": "4.3.2",
-    "ansi-styles": "5.2.0",
+    "ansi-styles": "6.1.0",
     "babel-jest": "28.1.1",
     "eslint": "8.17.0",
     "eslint-config-prettier": "8.5.0",
