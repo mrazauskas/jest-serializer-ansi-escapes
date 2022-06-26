@@ -31,14 +31,14 @@ const colorText = new Map([
 
   ["39", "/color"],
 
-  ["40", ["background", "black"]],
-  ["41", ["background", "red"]],
-  ["42", ["background", "green"]],
-  ["43", ["background", "yellow"]],
-  ["44", ["background", "blue"]],
-  ["45", ["background", "magenta"]],
-  ["46", ["background", "cyan"]],
-  ["47", ["background", "white"]],
+  ["40", "backgroundBlack"],
+  ["41", "backgroundRed"],
+  ["42", "backgroundGreen"],
+  ["43", "backgroundYellow"],
+  ["44", "backgroundBlue"],
+  ["45", "backgroundMagenta"],
+  ["46", "backgroundCyan"],
+  ["47", "backgroundWhite"],
 
   ["49", "/background"],
 
@@ -47,22 +47,22 @@ const colorText = new Map([
   ["55", "/overline"],
 
   ["90", "gray"],
-  ["91", ["bright", "red"]],
-  ["92", ["bright", "green"]],
-  ["93", ["bright", "yellow"]],
-  ["94", ["bright", "blue"]],
-  ["95", ["bright", "magenta"]],
-  ["96", ["bright", "cyan"]],
-  ["97", ["bright", "white"]],
+  ["91", "brightRed"],
+  ["92", "brightGreen"],
+  ["93", "brightYellow"],
+  ["94", "brightBlue"],
+  ["95", "brightMagenta"],
+  ["96", "brightCyan"],
+  ["97", "brightWhite"],
 
-  ["100", ["background", "gray"]],
-  ["101", ["background", "bright", "red"]],
-  ["102", ["background", "bright", "green"]],
-  ["103", ["background", "bright", "yellow"]],
-  ["104", ["background", "bright", "blue"]],
-  ["105", ["background", "bright", "magenta"]],
-  ["106", ["background", "bright", "cyan"]],
-  ["107", ["background", "bright", "white"]],
+  ["100", "backgroundGray"],
+  ["101", "backgroundBrightRed"],
+  ["102", "backgroundBrightGreen"],
+  ["103", "backgroundBrightYellow"],
+  ["104", "backgroundBrightBlue"],
+  ["105", "backgroundBrightMagenta"],
+  ["106", "backgroundBrightCyan"],
+  ["107", "backgroundBrightWhite"],
 ]);
 
 const commandText = new Map([
@@ -93,15 +93,9 @@ function colorOrStyleSequenceReplacer(sequenceText) {
     replacement.push(colorText.get(colorParameter) || "?");
   });
 
-  const replacementText = replacement.flat().map((segment, index) => {
-    if (index === 0) return segment;
+  const replacementText = replacement.flat();
 
-    return segment.replace(/^\w/, (firstCharacter) =>
-      firstCharacter.toUpperCase()
-    );
-  });
-
-  return `<${replacementText.join("")}>`;
+  return `<${replacementText.join(" ")}>`;
 }
 
 /**

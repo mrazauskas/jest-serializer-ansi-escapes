@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ansi escapes 1`] = `
-"<boldDim>Loading...</>
+"<bold dim>Loading...</>
 <eraseLine>
 <moveCursorToColumn1>
-<italicGreen>Success!</>"
+<italic green>Success!</>"
 `;
