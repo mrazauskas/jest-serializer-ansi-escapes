@@ -2,20 +2,23 @@ const escape = "\u001b";
 
 const colorText = new Map([
   ["0", "/"],
+
   ["1", "bold"],
   ["2", "dim"],
   ["3", "italic"],
   ["4", "underline"],
+
   ["7", "inverse"],
   ["8", "hidden"],
   ["9", "strikethrough"],
 
-  ["22", "/"],
-  ["23", "/"],
-  ["24", "/"],
-  ["27", "/"],
-  ["28", "/"],
-  ["29", "/"],
+  ["22", "/bold /dim"],
+  ["23", "/italic"],
+  ["24", "/underline"],
+
+  ["27", "/inverse"],
+  ["28", "/hidden"],
+  ["29", "/strikethrough"],
 
   ["30", "black"],
   ["31", "red"],
@@ -25,7 +28,8 @@ const colorText = new Map([
   ["35", "magenta"],
   ["36", "cyan"],
   ["37", "white"],
-  ["39", "/"],
+
+  ["39", "/color"],
 
   ["40", ["background", "black"]],
   ["41", ["background", "red"]],
@@ -35,10 +39,12 @@ const colorText = new Map([
   ["45", ["background", "magenta"]],
   ["46", ["background", "cyan"]],
   ["47", ["background", "white"]],
-  ["49", "/"],
+
+  ["49", "/background"],
 
   ["53", "overline"],
-  ["55", "/"],
+
+  ["55", "/overline"],
 
   ["90", "gray"],
   ["91", ["bright", "red"]],

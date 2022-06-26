@@ -10,7 +10,7 @@ describe("supports ansi-styles", () => {
   test("supports style.red", async () => {
     expect(
       prettyFormat(`${ansiStyle.red.open} foo content ${ansiStyle.red.close}`)
-    ).toEqual('"<red> foo content </>"');
+    ).toEqual('"<red> foo content </color>"');
   });
 
   test("supports style.green", () => {
@@ -18,7 +18,7 @@ describe("supports ansi-styles", () => {
       prettyFormat(
         `${ansiStyle.green.open} foo content ${ansiStyle.green.close}`
       )
-    ).toEqual('"<green> foo content </>"');
+    ).toEqual('"<green> foo content </color>"');
   });
 
   test("supports style.reset", () => {
