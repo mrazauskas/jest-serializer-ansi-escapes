@@ -12,7 +12,7 @@ const colorText = new Map([
   ["8", "hidden"],
   ["9", "strikethrough"],
 
-  ["22", "/bold /dim"],
+  ["22", "/intensity"],
   ["23", "/italic"],
   ["24", "/underline"],
 

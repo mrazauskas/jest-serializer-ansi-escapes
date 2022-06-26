@@ -19,7 +19,7 @@ describe("color and style sequences", () => {
     { expected: '"<hidden>"', sequence: "\u001b[8m" },
     { expected: '"<strikethrough>"', sequence: "\u001b[9m" },
 
-    { expected: '"</bold /dim>"', sequence: "\u001b[22m" },
+    { expected: '"</intensity>"', sequence: "\u001b[22m" },
     { expected: '"</italic>"', sequence: "\u001b[23m" },
     { expected: '"</underline>"', sequence: "\u001b[24m" },
 
