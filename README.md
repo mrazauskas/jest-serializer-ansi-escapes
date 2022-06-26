@@ -87,7 +87,7 @@ console.log(formattedSequence); // '<moveCursorToColumn26>'
 
 ## Notes
 
-Currently only 3/4 bit colors are all supported.
+Currently only 16 colors are all supported.
 
 Keep in mind that the escape sequences are not validated. Unrecognized sequence will print as `'<ESC>[a1b2c3'`, or as `'<?>'` in case this is a color or style sequence.
 
