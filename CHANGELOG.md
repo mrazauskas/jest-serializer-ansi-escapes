@@ -2,10 +2,10 @@
 
 ## [2.0.0] - 2022-06-26
 
-### Fixed
+### Changed
 
-- **Breaking:** Use commas to separate color or style argument replacements ([#8](https://github.com/mrazauskas/docusaurus-remark-plugin-tab-blocks/pull/8))
-- **Breaking:** Use descriptive strings for reset sequences ([#7](https://github.com/mrazauskas/docusaurus-remark-plugin-tab-blocks/pull/7))
+- **Breaking:** Use descriptive strings for reset sequences ([#7](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/7))
+- **Breaking:** Use commas to separate color or style argument replacements ([#8](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/8))
 
 ## [1.0.1] - 2022-06-13
 
