@@ -71,9 +71,9 @@ describe("color and style sequences", () => {
     { expected: '"<backgroundBrightCyan>"', sequence: "\u001b[106m" },
     { expected: '"<backgroundBrightWhite>"', sequence: "\u001b[107m" },
 
-    { expected: '"<bold red>"', sequence: "\u001b[1;31m" },
-    { expected: '"<bold inverse magenta>"', sequence: "\u001b[1;7;35m" },
-    { expected: '"</ dim>"', sequence: "\u001b[0;2m" },
+    { expected: '"<bold, red>"', sequence: "\u001b[1;31m" },
+    { expected: '"<bold, inverse, magenta>"', sequence: "\u001b[1;7;35m" },
+    { expected: '"</color, dim>"', sequence: "\u001b[39;2m" },
 
     { expected: '"<?>"', sequence: "\u001b[321m" }, // unrecognized sequence
   ])("$sequence", ({ expected, sequence }) => {

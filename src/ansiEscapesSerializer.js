@@ -93,9 +93,7 @@ function colorOrStyleSequenceReplacer(sequenceText) {
     replacement.push(colorText.get(colorParameter) || "?");
   });
 
-  const replacementText = replacement.flat();
-
-  return `<${replacementText.join(" ")}>`;
+  return `<${replacement.join(", ")}>`;
 }
 
 /**
