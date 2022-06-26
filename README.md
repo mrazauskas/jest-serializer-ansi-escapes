@@ -35,10 +35,10 @@ would output this snapshot:
 
 ```js
 exports[`ansi escapes 1`] = `
-"<boldDim>Loading...</>
+"<bold, dim>Loading...</>
 <eraseLine>
 <moveCursorToColumn1>
-<italicGreen>Success!</>"
+<italic, green>Success!</>"
 `;
 ```
 
