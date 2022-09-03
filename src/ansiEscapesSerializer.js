@@ -143,6 +143,10 @@ function moveCursorToReplacer(sequenceText) {
  * @returns {string}
  */
 function serializeAnsi(text) {
+  if (!text) {
+    return text;
+  }
+
   return text
     .replace(/\u001b\[(\d*;?)*m/g, colorOrStyleSequenceReplacer)
     .replace(/.(?=\u001b)/g, (match) => `${match}\n`)
