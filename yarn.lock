@@ -1990,7 +1990,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-escapes@npm:4.3.2, ansi-escapes@npm:^4.2.1":
+"ansi-escapes@npm:6.0.0":
+  version: 6.0.0
+  resolution: "ansi-escapes@npm:6.0.0"
+  dependencies:
+    type-fest: ^3.0.0
+  checksum: 1ddc0b27b1d040c3c703c9cd80ee0a103817e2f9fa8f1adf0c66e970b57543ec60effdb0bd1a396ed7182bca3b1a0d8fda60ec61fee862d353db81b1c3650a78
+  languageName: node
+  linkType: hard
+
+"ansi-escapes@npm:^4.2.1":
   version: 4.3.2
   resolution: "ansi-escapes@npm:4.3.2"
   dependencies:
@@ -3824,7 +3833,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.19.1
     "@babel/preset-env": 7.19.1
-    ansi-escapes: 4.3.2
+    ansi-escapes: 6.0.0
     ansi-styles: 5.2.0
     babel-jest: 29.0.3
     eslint: 8.23.1
@@ -5189,6 +5198,13 @@ __metadata:
   version: 0.21.3
   resolution: "type-fest@npm:0.21.3"
   checksum: e6b32a3b3877f04339bae01c193b273c62ba7bfc9e325b8703c4ee1b32dc8fe4ef5dfa54bf78265e069f7667d058e360ae0f37be5af9f153b22382cd55a9afe0
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "type-fest@npm:3.0.0"
+  checksum: 04c00bb3db91d7b98cddb948840926e5703384fb240550a2f1a152cf0781e293efd7001bb013ad84bd7b388cdb052bb6445afdc2d2be8f5529e3bc0ba03bb938
   languageName: node
   linkType: hard
 
