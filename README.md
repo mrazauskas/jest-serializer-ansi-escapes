@@ -46,9 +46,9 @@ exports[`ansi escapes 1`] = `
 ## Install
 
 ```bash
-yarn add --dev jest-serializer-ansi-escapes
-# or
 npm install --save-dev jest-serializer-ansi-escapes
+# or
+yarn add --dev jest-serializer-ansi-escapes
 ```
 
 ## Usage with Jest
