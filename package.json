@@ -34,7 +34,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "7.21.5",
+    "@babel/core": "7.21.8",
     "@babel/preset-env": "7.21.5",
     "ansi-escapes": "4.3.2",
     "ansi-styles": "5.2.0",
