@@ -55,49 +55,49 @@ describe("supports ansi-escapes", () => {
 
   test("cursorTo(14)", () => {
     expect(prettyFormat(ansiEscapes.cursorTo(14))).toEqual(
-      '"<moveCursorToColumn15>\n"'
+      '"<moveCursorToColumn15>\n"',
     );
   });
 
   test("cursorTo(6, 18)", () => {
     expect(prettyFormat(ansiEscapes.cursorTo(6, 18))).toEqual(
-      '"<moveCursorToRow19Column7>\n"'
+      '"<moveCursorToRow19Column7>\n"',
     );
   });
 
   test("cursorMove(5)", () => {
     expect(prettyFormat(ansiEscapes.cursorMove(5))).toEqual(
-      '"<moveCursorRightBy5Columns>\n"'
+      '"<moveCursorRightBy5Columns>\n"',
     );
   });
 
   test("cursorMove(-2)", () => {
     expect(prettyFormat(ansiEscapes.cursorMove(-2))).toEqual(
-      '"<moveCursorLeftBy2Columns>\n"'
+      '"<moveCursorLeftBy2Columns>\n"',
     );
   });
 
   test("cursorMove(12, 3)", () => {
     expect(prettyFormat(ansiEscapes.cursorMove(12, 3))).toEqual(
-      '"<moveCursorRightBy12Columns>\n<moveCursorDownBy3Rows>\n"'
+      '"<moveCursorRightBy12Columns>\n<moveCursorDownBy3Rows>\n"',
     );
   });
 
   test("cursorMove(10, -8)", () => {
     expect(prettyFormat(ansiEscapes.cursorMove(10, -8))).toEqual(
-      '"<moveCursorRightBy10Columns>\n<moveCursorUpBy8Rows>\n"'
+      '"<moveCursorRightBy10Columns>\n<moveCursorUpBy8Rows>\n"',
     );
   });
 
   test("cursorMove(-5, 18)", () => {
     expect(prettyFormat(ansiEscapes.cursorMove(-5, 18))).toEqual(
-      '"<moveCursorLeftBy5Columns>\n<moveCursorDownBy18Rows>\n"'
+      '"<moveCursorLeftBy5Columns>\n<moveCursorDownBy18Rows>\n"',
     );
   });
 
   test("cursorMove(-17, -2)", () => {
     expect(prettyFormat(ansiEscapes.cursorMove(-21, -9))).toEqual(
-      '"<moveCursorLeftBy21Columns>\n<moveCursorUpBy9Rows>\n"'
+      '"<moveCursorLeftBy21Columns>\n<moveCursorUpBy9Rows>\n"',
     );
   });
 });
