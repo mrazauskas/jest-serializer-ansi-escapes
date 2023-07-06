@@ -107,7 +107,7 @@ function moveCursorByReplacer(sequenceText) {
 
   const parameterValue = sequenceText.match(/\[(\d*)/)[1];
   const [command, parameterName, tailText] = commandText.get(
-    sequenceText.slice(-1)
+    sequenceText.slice(-1),
   );
 
   replacement.push(command, parameterValue || 1, parameterName);
@@ -148,7 +148,7 @@ function serializeAnsi(text) {
     .replace(/.(?=\u001b)/g, (match) => `${match}\n`)
     .replace(
       /\u001b\[2J\n?\u001b\[(3J\n?\u001b\[H|0f)\n?/g,
-      "<clearTerminal>\n"
+      "<clearTerminal>\n",
     )
     .replace(/\u001b\[\d*[A-FST]\n?/g, moveCursorByReplacer)
     .replace(/\u001b\[\d*G\n?/g, moveCursorToReplacer)
