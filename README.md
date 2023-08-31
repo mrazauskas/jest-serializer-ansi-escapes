@@ -1,11 +1,11 @@
 # jest-serializer-ansi-escapes
 
-Jest snapshot serializer for ANSI escape sequences.
-
 [![version][version-src]][version-href]
 [![license][license-src]][license-href]
 [![checks][checks-src]][checks-href]
 [![coverage][coverage-src]][coverage-href]
+
+Jest snapshot serializer for ANSI escape sequences.
 
 This snapshot serializer turns [ANSI escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code) into human readable text. It implements serialization of color, style and cursor control escapes and works with vanilla sequences as well as the output from libraries like `chalk`, `colors`, `ansi-escapes`, `ansi-styles` or `terminal-kit`.
 
