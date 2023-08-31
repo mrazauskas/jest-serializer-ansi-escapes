@@ -1,11 +1,11 @@
 # jest-serializer-ansi-escapes
 
-> Jest snapshot serializer for ANSI escape sequences.
+Jest snapshot serializer for ANSI escape sequences.
 
-[![version](https://img.shields.io/npm/v/jest-serializer-ansi-escapes)](https://npmjs.com/package/jest-serializer-ansi-escapes)
-[![license](https://img.shields.io/github/license/mrazauskas/jest-serializer-ansi-escapes)](https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md)
-[![node-ci](https://img.shields.io/github/actions/workflow/status/mrazauskas/jest-serializer-ansi-escapes/node-ci.yml?label=CI)](https://github.com/mrazauskas/jest-serializer-ansi-escapes/actions/workflows/node-ci.yml)
-[![coverage](https://img.shields.io/codecov/c/github/mrazauskas/jest-serializer-ansi-escapes/main)](https://app.codecov.io/gh/mrazauskas/jest-serializer-ansi-escapes)
+[![version][version-src]][version-href]
+[![license][license-src]][license-href]
+[![checks][checks-src]][checks-href]
+[![coverage][coverage-src]][coverage-href]
 
 This snapshot serializer turns [ANSI escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code) into human readable text. It implements serialization of color, style and cursor control escapes and works with vanilla sequences as well as the output from libraries like `chalk`, `colors`, `ansi-escapes`, `ansi-styles` or `terminal-kit`.
 
@@ -71,7 +71,7 @@ module.exports = {
 
 ## Usage with Pretty Format
 
-A Jest snapshot serializer is a plugin of Pretty Format, hence this serializer can be also used directly with [`pretty-format`](https://github.com/facebook/jest/tree/main/packages/pretty-format) library:
+A Jest snapshot serializer is a plugin of Pretty Format, hence this serializer can be also used directly with [`pretty-format`](https://github.com/jestjs/jest/tree/main/packages/pretty-format) library:
 
 ```js
 import { format as prettyFormat } from 'pretty-format';
@@ -98,4 +98,13 @@ Something is missing for your project? Just open an issue or send a PR.
 
 ## License
 
-[MIT](https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md)
+[MIT][license-href]
+
+[version-src]: https://badgen.net/npm/v/jest-serializer-ansi-escapes
+[version-href]: https://npmjs.com/package/jest-serializer-ansi-escapes
+[license-src]: https://badgen.net/github/license/mrazauskas/jest-serializer-ansi-escapes
+[license-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md
+[checks-src]: https://badgen.net/github/checks/mrazauskas/jest-serializer-ansi-escapes
+[checks-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/actions/workflows/node-ci.yml
+[coverage-src]: https://badgen.net/codecov/c/github/mrazauskas/jest-serializer-ansi-escapes
+[coverage-href]: https://app.codecov.io/gh/mrazauskas/jest-serializer-ansi-escapes
