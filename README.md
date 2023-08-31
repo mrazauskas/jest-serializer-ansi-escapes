@@ -105,6 +105,6 @@ Something is missing for your project? Just open an issue or send a PR.
 [license-src]: https://badgen.net/github/license/mrazauskas/jest-serializer-ansi-escapes
 [license-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md
 [checks-src]: https://badgen.net/github/checks/mrazauskas/jest-serializer-ansi-escapes
-[checks-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/actions/workflows/node-ci.yml
+[checks-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/actions/workflows/checks.yml
 [coverage-src]: https://badgen.net/codecov/c/github/mrazauskas/jest-serializer-ansi-escapes
 [coverage-href]: https://app.codecov.io/gh/mrazauskas/jest-serializer-ansi-escapes
