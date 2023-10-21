@@ -1,12 +1,7 @@
 {
   "name": "jest-serializer-ansi-escapes",
-  "description": "Jest snapshot serializer for ANSI escape sequences",
   "version": "2.0.1",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mrazauskas/jest-serializer-ansi-escapes.git"
-  },
+  "description": "Jest snapshot serializer for ANSI escape sequences",
   "keywords": [
     "ansi",
     "escape",
@@ -21,6 +16,11 @@
     "console",
     "terminal"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrazauskas/jest-serializer-ansi-escapes.git"
+  },
+  "license": "MIT",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "files": [
@@ -46,8 +46,8 @@
     "prettier": "3.0.3",
     "pretty-format": "29.7.0"
   },
+  "packageManager": "yarn@3.6.4",
   "engines": {
-    "node": ">=14"
-  },
-  "packageManager": "yarn@3.6.4"
+    "node": ">=16"
+  }
 }
