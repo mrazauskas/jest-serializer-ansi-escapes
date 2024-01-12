@@ -2709,9 +2709,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:27.6.2":
-  version: 27.6.2
-  resolution: "eslint-plugin-jest@npm:27.6.2"
+"eslint-plugin-jest@npm:27.6.3":
+  version: 27.6.3
+  resolution: "eslint-plugin-jest@npm:27.6.3"
   dependencies:
     "@typescript-eslint/utils": "npm:^5.10.0"
   peerDependencies:
@@ -2723,7 +2723,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: 9f8f26c1ad0725f0d137152b932315fb7da0c327947c05fb9be7ce10bf3b82a6be158956261c1343be1138c571c4e445074afcbfd84ea2b34b3a550196e6c79d
+  checksum: 7ec6cc7b9b9e157963e004130908baadeb583b7b1b2ccd75dcc5084ca669edc0f75b9b92453b9bde234009359ac9fc6c5665b2c35bc2c8d332b944ddeef1c485
   languageName: node
   linkType: hard
 
@@ -3846,7 +3846,7 @@ __metadata:
     ansi-styles: "npm:5.2.0"
     babel-jest: "npm:29.7.0"
     eslint: "npm:8.56.0"
-    eslint-plugin-jest: "npm:27.6.2"
+    eslint-plugin-jest: "npm:27.6.3"
     jest: "npm:29.7.0"
     prettier: "npm:3.1.1"
     pretty-format: "npm:29.7.0"
