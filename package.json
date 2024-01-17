@@ -29,8 +29,8 @@
   ],
   "scripts": {
     "lint": "yarn lint:eslint && yarn lint:prettier",
-    "lint:eslint": "eslint . --ext js",
-    "lint:prettier": "prettier . --write",
+    "lint:eslint": "eslint . --config eslint.config.json --ext js",
+    "lint:prettier": "prettier . --config prettier.config.json --write",
     "test": "jest"
   },
   "devDependencies": {
