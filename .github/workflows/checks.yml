@@ -6,11 +6,12 @@ on:
       - main
       - renovate/**
   pull_request:
-    branches-ignore:
-      - renovate/**
+    branches:
+      - main
 
 jobs:
   lint:
+    if: github.head_ref != 'renovate/**'
     name: Lint
     runs-on: ubuntu-latest
     steps:
