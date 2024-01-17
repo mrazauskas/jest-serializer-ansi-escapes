@@ -6,11 +6,12 @@ on:
       - main
       - renovate/**
   pull_request:
-    branches-ignore:
-      - renovate/**
+    branches:
+      - main
 
 jobs:
   lint:
+    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
     name: Lint
     runs-on: ubuntu-latest
     steps:
@@ -24,6 +25,7 @@ jobs:
       - run: yarn lint:prettier --no-write --check
 
   test-node:
+    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
     name: Test on Node.js v${{ matrix.node-version }}
     strategy:
       fail-fast: false
@@ -47,6 +49,7 @@ jobs:
           YARN_IGNORE_NODE: true # TODO remove after dropping support for Node.js 16
 
   test-os:
+    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
     name: Test on ${{ matrix.os }} using Node.js LTS
     strategy:
       fail-fast: false
@@ -64,6 +67,7 @@ jobs:
       - run: yarn test
 
   test-coverage:
+    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
     name: Test on Ubuntu with coverage using Node.js LTS
     runs-on: ubuntu-latest
 
