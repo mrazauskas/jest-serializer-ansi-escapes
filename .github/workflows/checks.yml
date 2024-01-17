@@ -11,7 +11,7 @@ on:
 
 jobs:
   lint:
-    if: "!startsWith(github.head_ref, 'renovate/')"
+    if: !startsWith(github.head_ref, 'renovate/')
     name: Lint
     runs-on: ubuntu-latest
     steps:
