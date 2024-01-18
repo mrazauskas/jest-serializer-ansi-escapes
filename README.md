@@ -15,22 +15,22 @@ For example, the following test:
 
 ```js
 // ansiEscapes.test.js
-import ansiEscapesSerializer from 'jest-serializer-ansi-escapes';
+import ansiEscapesSerializer from "jest-serializer-ansi-escapes";
 
 expect.addSnapshotSerializer(ansiEscapesSerializer);
 
 const output = [];
 
 jest
-  .spyOn(process.stdout, 'write')
+  .spyOn(process.stdout, "write")
   .mockImplementation((chunk) => output.push(chunk));
 
-test('ansi escapes', () => {
-  process.stdout.write('\u001b[1;2mLoading...\u001b[0m');
-  process.stdout.write('\u001b[2K\u001b[G');
-  process.stdout.write('\u001b[3;32mSuccess!\u001b[0m');
+test("ansi escapes", () => {
+  process.stdout.write("\u001b[1;2mLoading...\u001b[0m");
+  process.stdout.write("\u001b[2K\u001b[G");
+  process.stdout.write("\u001b[3;32mSuccess!\u001b[0m");
 
-  expect(output.join('')).toMatchSnapshot();
+  expect(output.join("")).toMatchSnapshot();
 });
 ```
 
@@ -58,7 +58,7 @@ yarn add --dev jest-serializer-ansi-escapes
 You can use [`expect.addSnapshotSerializer()`](https://jestjs.io/docs/expect#expectaddsnapshotserializerserializer) to enable the serializer for a particular test file:
 
 ```js
-import ansiEscapesSerializer from 'jest-serializer-ansi-escapes';
+import ansiEscapesSerializer from "jest-serializer-ansi-escapes";
 
 expect.addSnapshotSerializer(ansiEscapesSerializer);
 ```
@@ -67,7 +67,7 @@ If you prefer to use it for all tests in a project, add it to the [`snapshotSeri
 
 ```js
 module.exports = {
-  snapshotSerializers: ['jest-serializer-ansi-escapes'],
+  snapshotSerializers: ["jest-serializer-ansi-escapes"],
 };
 ```
 
@@ -76,10 +76,10 @@ module.exports = {
 A Jest snapshot serializer is a plugin of Pretty Format, hence this serializer can be also used directly with [`pretty-format`](https://github.com/jestjs/jest/tree/main/packages/pretty-format) library:
 
 ```js
-import { format as prettyFormat } from 'pretty-format';
-import ansiEscapesSerializer from 'jest-serializer-ansi-escapes';
+import { format as prettyFormat } from "pretty-format";
+import ansiEscapesSerializer from "jest-serializer-ansi-escapes";
 
-const sequence = '\u001b[26G';
+const sequence = "\u001b[26G";
 
 const formattedSequence = prettyFormat(sequence, {
   plugins: [ansiEscapesSerializer],

@@ -11,7 +11,7 @@ on:
 
 jobs:
   lint:
-    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
     name: Lint
     runs-on: ubuntu-latest
     steps:
@@ -21,11 +21,11 @@ jobs:
           node-version: lts/*
       - run: corepack enable
       - run: yarn install
-      - run: yarn lint:eslint
-      - run: yarn lint:prettier --no-write --check
+      - run: yarn check
+      - run: yarn lint
 
   test-node:
-    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
     name: Test on Node.js v${{ matrix.node-version }}
     strategy:
       fail-fast: false
@@ -49,7 +49,7 @@ jobs:
           YARN_IGNORE_NODE: true # TODO remove after dropping support for Node.js 16
 
   test-os:
-    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
     name: Test on ${{ matrix.os }} using Node.js LTS
     strategy:
       fail-fast: false
@@ -67,7 +67,7 @@ jobs:
       - run: yarn test
 
   test-coverage:
-    if: ${{ !startsWith(github.head_ref, 'renovate/') }}
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
     name: Test on Ubuntu with coverage using Node.js LTS
     runs-on: ubuntu-latest
 
