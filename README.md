@@ -1,9 +1,9 @@
 # jest-serializer-ansi-escapes
 
-[![version][version-src]][version-href]
-[![license][license-src]][license-href]
-[![checks][checks-src]][checks-href]
-[![coverage][coverage-src]][coverage-href]
+[![version][version-badge]][version-url]
+[![license][license-badge]][license-url]
+[![checks][checks-badge]][checks-url]
+[![coverage][coverage-badge]][coverage-url]
 
 Jest snapshot serializer for ANSI escape sequences.
 
@@ -100,13 +100,13 @@ Something is missing for your project? Just open an issue or send a PR.
 
 ## License
 
-[MIT][license-href]
+[MIT][license-url]
 
-[version-src]: https://badgen.net/npm/v/jest-serializer-ansi-escapes
-[version-href]: https://npmjs.com/package/jest-serializer-ansi-escapes
-[license-src]: https://badgen.net/github/license/mrazauskas/jest-serializer-ansi-escapes
-[license-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md
-[checks-src]: https://badgen.net/github/checks/mrazauskas/jest-serializer-ansi-escapes
-[checks-href]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/actions/workflows/checks.yml
-[coverage-src]: https://badgen.net/codecov/c/github/mrazauskas/jest-serializer-ansi-escapes
-[coverage-href]: https://app.codecov.io/gh/mrazauskas/jest-serializer-ansi-escapes
+[version-badge]: https://badgen.net/npm/v/jest-serializer-ansi-escapes
+[version-url]: https://npmjs.com/package/jest-serializer-ansi-escapes
+[license-badge]: https://badgen.net/github/license/mrazauskas/jest-serializer-ansi-escapes
+[license-url]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md
+[checks-badge]: https://badgen.net/github/checks/mrazauskas/jest-serializer-ansi-escapes
+[checks-url]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/actions/workflows/checks.yml
+[coverage-badge]: https://badgen.net/codacy/coverage/af1dd8dbbb384a3abb7371ac75b5ac85
+[coverage-url]: https://app.codacy.com/gh/mrazauskas/jest-serializer-ansi-escapes/coverage/dashboard
