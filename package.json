@@ -9,12 +9,7 @@
     "jest",
     "snapshots",
     "serializer",
-    "testing",
-    "cursor",
-    "colors",
-    "cli",
-    "console",
-    "terminal"
+    "testing"
   ],
   "repository": {
     "type": "git",
