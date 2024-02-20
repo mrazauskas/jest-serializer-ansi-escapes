@@ -18,11 +18,11 @@
   "license": "MIT",
   "funding": "https://github.com/sponsors/mrazauskas",
   "type": "commonjs",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "src/*.js",
-    "src/*.d.ts"
+    "index.d.ts",
+    "index.js"
   ],
   "scripts": {
     "check": "dprint check",
@@ -30,11 +30,12 @@
     "lint": "eslint . --config eslint.config.json --ext js",
     "test": "jest"
   },
+  "dependencies": {
+    "pretty-ansi": "2.0.0"
+  },
   "devDependencies": {
     "@babel/core": "7.23.9",
     "@babel/preset-env": "7.23.9",
-    "ansi-escapes": "4.3.2",
-    "ansi-styles": "5.2.0",
     "babel-jest": "29.7.0",
     "dprint": "0.45.0",
     "eslint": "8.56.0",
