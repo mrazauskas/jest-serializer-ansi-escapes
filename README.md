@@ -92,9 +92,9 @@ Currently only 16 colors are all supported.
 
 Keep in mind that the escape sequences are not validated. Unrecognized sequence will print as `<ESC>[a1b2c3`, or as `<?>` in case this is a color or style sequence.
 
-## Contributing
+## Related
 
-Something is missing for your project? Just open an issue or send a PR.
+[`pretty-ansi`](https://github.com/mrazauskas/pretty-ansi) — Convert ANSI escape sequences to human readable text.
 
 ## License
 
