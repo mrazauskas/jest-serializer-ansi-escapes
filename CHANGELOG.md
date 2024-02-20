@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.0] - 2024-02-20
+
+### Changed
+
+- Move the converter logic to a separate package ([#199](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/199))
+- **Breaking:** Drop support for Node.js 14 and 19 ([#186](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/186))
+
 ## [2.0.1] - 2022-06-26
 
 ### Fixed
@@ -23,6 +30,7 @@
 
 _First release._
 
+[3.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v3.0.0
 [2.0.1]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v2.0.1
 [2.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v2.0.0
 [1.0.1]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v1.0.1
