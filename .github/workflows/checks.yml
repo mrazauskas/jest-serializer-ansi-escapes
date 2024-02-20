@@ -19,10 +19,9 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: lts/*
-      - run: corepack enable
-      - run: yarn install
-      - run: yarn check
-      - run: yarn lint
+      - run: npm install
+      - run: npm run check
+      - run: npm run lint
 
   test-node:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
@@ -39,14 +38,10 @@ jobs:
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: corepack enable
-      - run: yarn install
-        env:
-          YARN_IGNORE_NODE: true # TODO remove after dropping support for Node.js 16
-      - run: yarn test
+      - run: npm install
+      - run: npm run test
         env:
           FORCE_COLOR: true
-          YARN_IGNORE_NODE: true # TODO remove after dropping support for Node.js 16
 
   test-os:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
@@ -62,9 +57,10 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: lts/*
-      - run: corepack enable
-      - run: yarn install
-      - run: yarn test
+      - run: npm install
+      - run: npm run test
+        env:
+          FORCE_COLOR: true
 
   test-coverage:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && !startsWith(github.head_ref, 'renovate/'))
@@ -76,9 +72,10 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: lts/*
-      - run: corepack enable
-      - run: yarn install
-      - run: yarn test --coverage
+      - run: npm install
+      - run: npm run test:coverage
+        env:
+          FORCE_COLOR: true
       - uses: codacy/codacy-coverage-reporter-action@89d6c85cfafaec52c72b6c5e8b2878d33104c699 # v1
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
