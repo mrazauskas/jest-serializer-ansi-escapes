@@ -16,6 +16,7 @@
     "url": "git+https://github.com/mrazauskas/jest-serializer-ansi-escapes.git"
   },
   "license": "MIT",
+  "funding": "https://github.com/sponsors/mrazauskas",
   "type": "commonjs",
   "main": "src/index.js",
   "types": "src/index.d.ts",
