@@ -1,4 +1,4 @@
-import ansiEscapesSerializer from "jest-serializer-ansi-escapes";
+const ansiEscapesSerializer = require("jest-serializer-ansi-escapes");
 
 expect.addSnapshotSerializer(ansiEscapesSerializer);
 

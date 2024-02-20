@@ -35,9 +35,6 @@
     "pretty-ansi": "2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.23.9",
-    "@babel/preset-env": "7.23.9",
-    "babel-jest": "29.7.0",
     "dprint": "0.45.0",
     "eslint": "8.56.0",
     "eslint-plugin-jest": "27.9.0",
