@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: lts/*
-      - run: npm install
+      - run: npm ci
       - run: npm run check
       - run: npm run lint
 
@@ -38,7 +38,7 @@ jobs:
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
+      - run: npm ci
       - run: npm run test
         env:
           FORCE_COLOR: true
@@ -57,7 +57,7 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: lts/*
-      - run: npm install
+      - run: npm ci
       - run: npm run test
         env:
           FORCE_COLOR: true
@@ -72,7 +72,7 @@ jobs:
       - uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: lts/*
-      - run: npm install
+      - run: npm ci
       - run: npm run test:coverage
         env:
           FORCE_COLOR: true
