@@ -15,6 +15,7 @@ For example, the following test:
 
 ```js
 // ansiEscapes.test.js
+import { expect, jest, test } from "@jest/globals";
 import ansiEscapesSerializer from "jest-serializer-ansi-escapes";
 
 expect.addSnapshotSerializer(ansiEscapesSerializer);
@@ -56,6 +57,7 @@ npm add -D jest-serializer-ansi-escapes
 You can use [`expect.addSnapshotSerializer()`](https://jestjs.io/docs/expect#expectaddsnapshotserializerserializer) to enable the serializer for a particular test file:
 
 ```js
+import { expect } from "@jest/globals";
 import ansiEscapesSerializer from "jest-serializer-ansi-escapes";
 
 expect.addSnapshotSerializer(ansiEscapesSerializer);
