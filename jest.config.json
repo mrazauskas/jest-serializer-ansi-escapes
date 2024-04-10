@@ -1,0 +1,4 @@
+{
+  "coverageProvider": "v8",
+  "injectGlobals": false
+}

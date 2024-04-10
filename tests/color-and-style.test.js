@@ -1,3 +1,4 @@
+const { describe, expect, test } = require("@jest/globals");
 const { format } = require("pretty-format");
 const ansiEscapesSerializer = require("../");
 

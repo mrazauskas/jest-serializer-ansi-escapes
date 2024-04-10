@@ -1,0 +1,38 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
+
+  "files": {
+    "ignore": ["coverage/**", "package.json"]
+  },
+
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "lineWidth": 80
+  },
+
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+
+      "correctness": {
+        "noUndeclaredVariables": "error",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+
+      "style": {
+        "noNegationElse": "error"
+      },
+
+      "suspicious": {
+        "noEmptyBlockStatements": "error"
+      }
+    }
+  },
+
+  "organizeImports": {
+    "enabled": true
+  }
+}

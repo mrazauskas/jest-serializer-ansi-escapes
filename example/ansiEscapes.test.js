@@ -1,3 +1,4 @@
+const { expect, jest, test } = require("@jest/globals");
 const ansiEscapesSerializer = require("jest-serializer-ansi-escapes");
 
 expect.addSnapshotSerializer(ansiEscapesSerializer);
