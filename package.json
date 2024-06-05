@@ -25,8 +25,8 @@
     "index.js"
   ],
   "scripts": {
-    "check": "biome check . --apply",
-    "format": "biome format . --write",
+    "check": "biome check --write",
+    "format": "biome format --write",
     "test": "jest",
     "test:coverage": "jest --collectCoverage"
   },
