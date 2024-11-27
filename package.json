@@ -39,6 +39,6 @@
     "pretty-format": "29.7.0"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   }
 }
