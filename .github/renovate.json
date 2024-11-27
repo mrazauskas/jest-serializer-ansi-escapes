@@ -5,6 +5,7 @@
     ":automergeBranch",
     ":automergeMinor",
     ":maintainLockFilesWeekly",
+    ":pinOnlyDevDependencies",
     ":semanticCommits",
     "customManagers:biomeVersions"
   ]
