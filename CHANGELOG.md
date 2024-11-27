@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.0.0] - 2024-10-27
+
+### Changed
+
+- **Breaking:** Drop support for Node.js 16 ([#215](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/215))
+
 ## [3.0.0] - 2024-02-20
 
 ### Changed
@@ -30,6 +36,7 @@
 
 _First release._
 
+[4.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v4.0.0
 [3.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v3.0.0
 [2.0.1]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v2.0.1
 [2.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v2.0.0
