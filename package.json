@@ -34,7 +34,7 @@
     "pretty-ansi": "^3.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.0",
     "jest": "30.0.0",
     "pretty-format": "30.0.0"
   },
