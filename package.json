@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.0",
-    "jest": "30.0.1",
-    "pretty-format": "30.0.1"
+    "jest": "30.0.2",
+    "pretty-format": "30.0.2"
   },
   "engines": {
     "node": ">=18"
