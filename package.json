@@ -32,8 +32,8 @@
     "pretty-ansi": "^3.0.0"
   },
   "devDependencies": {
-    "jest": "30.0.4",
-    "pretty-format": "30.0.2"
+    "jest": "30.0.5",
+    "pretty-format": "30.0.5"
   },
   "engines": {
     "node": ">=18"
