@@ -2,7 +2,7 @@
 
 [![version][version-badge]][version-url]
 [![license][license-badge]][license-url]
-[![packagephobia][packagephobia-badge]][packagephobia-url]
+[![install-size][install-size-badge]][install-size-url]
 [![coverage][coverage-badge]][coverage-url]
 
 Jest snapshot serializer for ANSI escape sequences.
@@ -106,7 +106,7 @@ Keep in mind that the escape sequences are not validated. Unrecognized sequence 
 [version-url]: https://npmjs.com/package/jest-serializer-ansi-escapes
 [license-badge]: https://badgen.net/github/license/mrazauskas/jest-serializer-ansi-escapes
 [license-url]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/blob/main/LICENSE.md
-[packagephobia-badge]: https://badgen.net/packagephobia/install/jest-serializer-ansi-escapes
-[packagephobia-url]: https://packagephobia.com/result?p=jest-serializer-ansi-escapes
-[coverage-badge]: https://badgen.net/codacy/coverage/af1dd8dbbb384a3abb7371ac75b5ac85
-[coverage-url]: https://app.codacy.com/gh/mrazauskas/jest-serializer-ansi-escapes/coverage/dashboard
+[install-size-badge]: https://badgen.net/packagephobia/install/jest-serializer-ansi-escapes
+[install-size-url]: https://packagephobia.com/result?p=jest-serializer-ansi-escapes
+[coverage-badge]: https://badgen.net/codecov/github/mrazauskas/jest-serializer-ansi-escapes
+[coverage-url]: https://app.codecov.io/gh/mrazauskas/jest-serializer-ansi-escapes
