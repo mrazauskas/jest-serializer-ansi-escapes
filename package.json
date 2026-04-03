@@ -29,7 +29,7 @@
     "test:coverage": "jest --collectCoverage"
   },
   "dependencies": {
-    "pretty-ansi": "^3.0.0"
+    "pretty-ansi": "^4.0.0"
   },
   "devDependencies": {
     "jest": "30.3.0",
