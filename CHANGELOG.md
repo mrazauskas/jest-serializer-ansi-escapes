@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.0] - 2026-04-03
+
+### Changed
+
+- **Breaking:** Update dependency `pretty-ansi` to v4 ([#235](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/235))
+- **Breaking:** Drop support for Node.js 18 ([#236](https://github.com/mrazauskas/jest-serializer-ansi-escapes/pull/236))
+
 ## [4.0.0] - 2024-10-27
 
 ### Changed
@@ -36,6 +43,7 @@
 
 _First release._
 
+[5.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v5.0.0
 [4.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v4.0.0
 [3.0.0]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v3.0.0
 [2.0.1]: https://github.com/mrazauskas/jest-serializer-ansi-escapes/releases/tag/v2.0.1
